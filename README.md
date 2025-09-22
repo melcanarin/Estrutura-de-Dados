@@ -1,2 +1,2 @@
 # Estrutura-de-Dados
-Códigos criados em C na aula de Estrutura de Dados
+Códigos em C criados na aula de Estrutura de Dados
