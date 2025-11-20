@@ -17,7 +17,7 @@ int main(){
     int x; char op;
     do {
         printf("\n1 - Inserir\n2 - Excluir\n3 - preOrdem\n4 - emOrdem\n5- posOrdem\n6 - Sair\n>");
-        scanf("%c", &op);
+        scanf(" %c", &op);
         switch (op){
             case '1':
                 printf("\nValor? ");
@@ -94,7 +94,7 @@ arvoreBinaria *remover(arvoreBinaria *a, int el){
  
 void preOrdem(arvoreBinaria *a){
     if(a != NULL){
-        printf("%d", a -> elem);
+        printf("%d ", a -> elem);
         preOrdem(a -> esq);
         preOrdem(a -> dir);
     }
@@ -103,7 +103,7 @@ void preOrdem(arvoreBinaria *a){
 void emOrdem(arvoreBinaria *a){
     if(a != NULL){
         emOrdem(a -> esq);
-        printf("%d", a -> elem);
+        printf("%d ", a -> elem);
         emOrdem(a -> dir);
     }
 }
@@ -112,6 +112,6 @@ void posOrdem(arvoreBinaria *a){
     if(a != NULL){
         posOrdem(a -> esq);
         posOrdem(a -> dir);
-        printf("%d", a -> elem);
+        printf("%d ", a -> elem);
     }
 }
